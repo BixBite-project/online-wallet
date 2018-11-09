@@ -1,0 +1,215 @@
+
+body{
+    background-image: url(../img/1.png);
+    background-repeat:repeat;
+    
+}
+
+.title{    
+  font-size: 24px;
+  text-align: center;
+    color: #ddd;
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    text-indent: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.form-3 {
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-weight: 400;
+    /* Size and position */
+    width: 300px;    
+    height: 210px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -170px;
+    /*margin: 260px auto 30px;*/
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    overflow: hidden;
+ 
+    /* Styles */
+    background: #111;
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+    box-shadow:
+        inset 0 0 2px 1px rgba(255,255,255,0.08),
+        0 16px 10px -8px rgba(0, 0, 0, 0.6);
+}
+
+.form-3 label {
+    /* Size and position */
+    width: 50%;
+    float: left;
+    padding-top: 9px;
+ 
+    /* Styles */
+    color: #ddd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    text-indent: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+ 
+.form-3 input[type=text],
+.form-3 input[type=email],
+.form-3 input[type=password] {
+    /* Size and position */
+    width: 97%;
+    float: left;
+    margin-top: 2px;
+    padding: 8px 5px;    
+    font-size: 12px;
+ 
+    /* Styles */
+    background: linear-gradient(#1f2124, #27292c);   
+    border: 1px solid #000;
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.1);
+    border-radius: 3px;
+ 
+    /* Font styles */
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: #fff;
+ 
+}
+ 
+.form-3 input[type=text]:hover,
+.form-3 input[type=email]:hover,
+.form-3 input[type=password]:hover,
+.form-3 label:hover ~ input[type=text],
+.form-3 label:hover ~ input[type=password] {
+    background: #27292c;
+}
+ 
+.form-3 input[type=text]:focus,
+.form-3 input[type=email]:focus,
+.form-3 input[type=password]:focus {
+    box-shadow: inset 0 0 2px #000;
+    background: #494d54;
+    border-color: #51cbee;
+    outline: none; /* Remove Chrome outline */
+}
+
+.form-3 label[for=remember] {
+    width: auto;
+    float: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-indent: 2px;
+}
+ 
+.form-3 input[type=checkbox] {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    
+}
+.form-3 .login {
+    /* Width and position */
+    width: 101%;
+    padding: 8px 5px;
+    margin-top: 12px;
+    margin-bottom: 1px;
+    /* Styles */
+    border: 1px solid #000000; /* Fallback */
+    
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #a01f4e;
+    cursor:pointer;
+   
+    /* Font styles */
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+    outline: 0;
+    outline-offset: 0;
+}
+ 
+.form-3  .login:hover {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+ 
+.form-3  .login:active {
+    background: #79173b;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.6);
+   
+}
+ 
+.no-boxshadow .form-3  .login:hover {
+    background: #2a92d8;
+}
+/* Gradient line */
+.form-3:after {
+    /* Size and position */
+    content: "";
+    height: 1px;
+    width: 33%;
+    position: absolute;
+    left: 38%;
+    top: 0;
+
+    /* Styles */
+    background: -moz-linear-gradient(left, transparent, #444, #b6b6b8, #444, transparent);
+    background: -ms-linear-gradient(left, transparent, #444, #b6b6b8, #444, transparent);
+    background: -o-linear-gradient(left, transparent, #444, #b6b6b8, #444, transparent);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), color-stop(0.25, #444), color-stop(0.5, #b6b6b8), color-stop(0.75, #444), to(transparent));
+    background: -webkit-linear-gradient(left, transparent, #444, #b6b6b8, #444, transparent);
+    background: linear-gradient(left, transparent, #444, #b6b6b8, #444, transparent);
+}
+ 
+/* Small flash */
+.form-3:before {
+    /* Size and position */
+    content: "";
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    left: 52%;
+    top: -7px;
+     
+    /* Styles */
+    border-radius: 50%;
+    box-shadow: 0 0 6px 4px #fff;
+}
+.form-3 p:nth-child(1):before{
+    /* Size and position */
+    content: "";
+    width: 385px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 45px;
+ 
+    /* Styles */
+    transform: rotate(75deg);
+    background: linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+    pointer-events: none;
+}
+.no-pointerevents .form-3 p:nth-child(1):before {
+    display: none;
+}
